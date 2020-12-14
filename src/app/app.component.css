@@ -1,0 +1,10 @@
+.content{
+    display: flex;
+    margin: 40px 0 20px;
+}
+.content input{
+margin-right: 15px;
+}
+.red{
+    border: 2px solid red;
+}

@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "decorator"
+  "defaultProject": "decorator",
+  "cli": {
+    "analytics": "7e19720b-3aad-486a-898f-6f57e00ff9b1"
+  }
 }

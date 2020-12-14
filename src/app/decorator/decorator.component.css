@@ -1,0 +1,19 @@
+.content{
+    display: none;
+}
+.content input{
+margin-right: 15px;
+}
+.show{
+    display: flex;
+}
+.danger{
+    color: red;
+}
+.accept{
+    color: green;
+    font-weight: bold;
+}
+.red{
+    border: 2px solid red;
+}

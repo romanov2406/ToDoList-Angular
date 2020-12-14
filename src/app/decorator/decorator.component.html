@@ -1,0 +1,31 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Task</th>
+        <th scope="col">Check</th>
+        <th scope="col">Done/In Progress</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let elem of arr; index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{elem.name}}</td>
+        <td><input type="checkbox" (change)="active(i)"></td>
+        <td [class.danger]="!elem.status" [class.accept]="elem.status">{{elem.status? "Done": elem.lernStatus}}</td>
+        <td><button class="btn btn-warning" (click)="editTask(i)">Edit</button></td>
+        <td><button class="btn btn-danger" (click)="deleteTask(i)" [disabled]="!elem.status">Delete</button></td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+</div>
+<div class="container">
+  <div class="content"  [class.show]="isShow">
+    <input type="text" class="form-control" [class.red]="isRed" [(ngModel)]="save" aria-label="Text input with dropdown button">
+    <button class="btn btn-success" (click)="saveTask()">Save</button>
+  </div>
+</div>
