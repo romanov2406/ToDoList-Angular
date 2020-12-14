@@ -8,10 +8,10 @@ import {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   // Variable
   parentText: string;
-  arr: Array < Itask > = [];
+  arr: Array<Itask> = [];
   title = 'decorator';
   isRed: boolean;
 
@@ -35,8 +35,8 @@ export class AppComponent {
 // Abstraction
 interface Itask {
   name: string,
-    status: boolean,
-    lernStatus: string
+  status: boolean,
+  lernStatus: string
 }
 // create new class to make new object 
 class Task implements Itask {
@@ -44,5 +44,5 @@ class Task implements Itask {
     public name: string,
     public status: boolean = false,
     public lernStatus: string = 'In Proccces'
-  ) {}
+  ) { }
 }

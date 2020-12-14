@@ -1,6 +1,7 @@
 <!-- App-Componemt -->
 <div class="container">
   <h4>Plan your Day :)</h4>
+  <h3>Count of Task: {{arr.length}}</h3>
   <div class="content">
     <input class="form-control" type="text" [(ngModel)]="parentText" [class.red]="isRed" name="parentText">
     <button class="btn btn-warning" (click)="addTask()">Add</button>
