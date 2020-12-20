@@ -14,7 +14,6 @@ export class AppComponent {
   arr: Array<Itask> = [];
   title = 'decorator';
   isRed: boolean;
-
   // create class instance and Push this in Array
   addTask(): void {
     if (this.parentText) {
